@@ -15,7 +15,7 @@ const {axiosWithToken} = useAxios()
       const { data } = await axiosWithToken(`/stock/${url}/`)
 
             dispatch(getStockSuccess({data, url}))
-            console.log(data)
+           
           } catch (error) {
             dispatch(fetchFail())
             console.log(error)
